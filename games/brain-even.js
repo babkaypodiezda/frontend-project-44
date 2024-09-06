@@ -31,7 +31,7 @@ else if (answer === "no") {
     };
 }
 else {
-    return console.log("Put only numbers");
+    return console.log("Input only numbers");
 }
 }
 console.log(`Congratulations, ${userName}!`);

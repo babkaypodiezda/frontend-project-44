@@ -28,7 +28,7 @@ for (let i = 0; i < 3; i += 1) {
 console.log("Questiom: ",x,z,y);
 
 const answer = Number(readlineSync.question("Your answer: "));
-if (Number.isNaN(answer)){return console.log("Put only numbers")};
+if (Number.isNaN(answer)){return console.log("Input only numbers")};
 
 let w = 0;
 if ( z === "+"){

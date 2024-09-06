@@ -13,13 +13,13 @@ for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
     console.log("Questiom: ",x);
 
-    const answer = readlineSync.question("Your answer:");
+    const answer = readlineSync.question("Your answer: ");
 if (answer === "yes"){
     if (x % 2 === 0) {
         console.log("Correct!");
     }
     else {
-        return console.log("'",answer,"'is wrong answer ;(. Correct answer was 'no'. Let's try again, ",userName,"!")
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`)
     };
 }
 else if (answer === "no") {
@@ -27,12 +27,12 @@ else if (answer === "no") {
         console.log("Correct!");
     }
     else {
-        return console.log("'",answer,"'is wrong answer ;(. Correct answer was 'yes'. Let's try again, ",userName,"!")
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`)
     };
 }
 else {
-    return console.log("Nope");
+    return console.log("Put only numbers");
 }
 }
-console.log("Congratulations, ",userName,"!");
+console.log(`Congratulations, ${userName}!`);
 }

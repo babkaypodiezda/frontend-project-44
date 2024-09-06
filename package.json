@@ -2,9 +2,10 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/babkaypodiezda/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/babkaypodiezda/frontend-project-44/actions)",
-  "main": "./src/cli.js",
+  "main": "src/cli.js",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "type": "module",
   "scripts": {
@@ -20,6 +21,12 @@
   "author": "me",
   "license": "ISC",
   "dependencies": {
+    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }

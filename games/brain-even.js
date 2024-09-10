@@ -2,10 +2,7 @@
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
-export default () => {
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name?\n');
-console.log('Hello, ' + userName + '!');    
+export default () => {   
 console.log('Answer "yes" if the number is even, otherwise answer "no".');  
 
 for (let i = 0; i < 3; i += 1) {

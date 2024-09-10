@@ -4,10 +4,7 @@ import _ from 'lodash';
 import isPrime from '../src/primeNumber.js';
 
 export default () => {
-console.log('Welcome to the Brain Games!');
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-const userName = readlineSync.question('May I have your name?\n');
-console.log('Hello, ' + userName + '!');  
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);

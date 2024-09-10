@@ -3,11 +3,7 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
 export default () => {
-console.log('Welcome to the Brain Games!');
 console.log('Find the greatest common divisor of given numbers.');
-const userName = readlineSync.question('May I have your name?\n');
-console.log('Hello, ' + userName + '!');   
-
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
     let y = _.random(100);

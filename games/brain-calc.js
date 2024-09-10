@@ -4,11 +4,9 @@ import _ from 'lodash';
 
 export default () => {
 console.log('Welcome to the Brain Games!');
+console.log('What is the result of the expression?');
 const userName = readlineSync.question('May I have your name?\n');
 console.log('Hello, ' + userName + '!');  
-
-console.log('What is the result of the expression?');
-
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);

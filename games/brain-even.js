@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 
 export default () => {
-const userName = readlineSync.question('May I have your name? ');
-console.log('Hi ' + userName + '!');  
+const userName = readlineSync.question('May I have your name?\n');
+console.log('Hello, ' + userName + '!');      
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 

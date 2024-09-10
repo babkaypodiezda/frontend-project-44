@@ -8,7 +8,7 @@ console.log('What number is missing in the progression?');
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(10); //start
-    let y = _.random(10); // increment
+    let y = _.random(1,10); // increment
     const arr = [];
     arr.push(x);
 

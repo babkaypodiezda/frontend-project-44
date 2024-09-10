@@ -9,7 +9,7 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
-    console.log("Question: ",x);
+    console.log(`Question: ${x}`);
     const answer = readlineSync.question("Your answer: ");
     
 if (answer === "yes") {

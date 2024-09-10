@@ -10,7 +10,7 @@ for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
     let y = _.random(100);
 
-console.log("Question: ",x,y);
+console.log(`Question: ${x} ${y}`);
 let q = 0;
 for (let i = 0; i < 100; i += 1) {
     if (x % i === 0 && y % i === 0 ) {

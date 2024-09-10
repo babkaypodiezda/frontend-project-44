@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import * as greetings from '../src/greetings.js';
-import brainGdc from '../games/brain-gdc.js';
+import brainGcd from '../games/brain-gcd.js';
 
-brainGdc();
+brainGcd();

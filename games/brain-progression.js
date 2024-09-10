@@ -23,7 +23,7 @@ for (let i = 0; i < 3; i += 1) {
     let z = _.random(9);
     let q = arr[z];
     arr[z] = `..`;
-    console.log(`Questiom: ${arr}`);
+    console.log(`Question: ${arr}`);
 
 const answer = Number(readlineSync.question("Your answer: "));
 if (Number.isNaN(answer)){return console.log("Input only numbers")};

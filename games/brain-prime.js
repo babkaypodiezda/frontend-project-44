@@ -1,21 +1,24 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
+import isPrime from '../src/primeNumber.js';
 
 export default () => {
+console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');  
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
+    let result = 0;
     console.log("Question: ",x);
 
     const answer = readlineSync.question("Your answer: ");
-if (answer === "yes"){
-    if (x % 2 === 0) {
+if (answer === "yes") {
+    if (isPrime(x) === true) {
         console.log("Correct!");
     }
     else {
@@ -23,7 +26,7 @@ if (answer === "yes"){
     };
 }
 else if (answer === "no") {
-    if (x % 2 !== 0) {
+    if ( isPrime(x) === false) {
         console.log("Correct!");
     }
     else {
@@ -31,8 +34,9 @@ else if (answer === "no") {
     };
 }
 else {
-    return console.log("Input only numbers");
+    return console.log("Input only 'yes' or 'no'");
+    }
 }
-}
+
 console.log(`Congratulations, ${userName}!`);
 }

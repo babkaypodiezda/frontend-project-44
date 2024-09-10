@@ -3,8 +3,7 @@ import readlineSync from 'readline-sync';
 import _ from 'lodash';
 import { userName } from '../src/greetings.js';
 
-export default () => {   
-console.log('Answer "yes" if the number is even, otherwise answer "no".');  
+export default () => {    
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);

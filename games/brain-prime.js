@@ -7,16 +7,14 @@ export default () => {
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');  
-
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
-    let result = 0;
     console.log("Question: ",x);
-
     const answer = readlineSync.question("Your answer: ");
+    
 if (answer === "yes") {
     if (isPrime(x) === true) {
         console.log("Correct!");

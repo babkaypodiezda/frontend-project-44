@@ -4,9 +4,9 @@ import _ from 'lodash';
 
 export default () => {
 console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if number odd otherwise answer "no".\n');
 const userName = readlineSync.question('May I have your name?\n');
-console.log('Hello, ' + userName + '!');      
+console.log('Hello, ' + userName + '!');    
+console.log('Answer "yes" if the number is even, otherwise answer "no".');  
 
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);

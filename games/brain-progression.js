@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
+import { userName } from '../src/greetings.js';
 
 export default () => {
 console.log('What number is missing in the progression?');

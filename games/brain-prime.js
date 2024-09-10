@@ -2,6 +2,7 @@
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
 import isPrime from '../src/primeNumber.js';
+import { userName } from '../src/greetings.js';
 
 export default () => {
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

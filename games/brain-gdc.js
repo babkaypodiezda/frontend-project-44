@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
+import { userName } from '../src/greetings.js';
 
 export default () => {
 console.log('Find the greatest common divisor of given numbers.');
+
 for (let i = 0; i < 3; i += 1) {
     let x = _.random(100);
     let y = _.random(100);

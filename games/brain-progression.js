@@ -18,7 +18,7 @@ export default () => {
 
     const z = _.random(9);
     const q = arr[z];
-    arr[z] = `..`;
+    arr[z] = '..';
     console.log(`Question: ${arr.join(' ')}`);
 
     const answer = Number(readlineSync.question('Your answer: '));
@@ -29,7 +29,7 @@ export default () => {
     if (answer === q) {
       console.log('Correct!');
     } else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
     }
   }
   console.log(`Congratulations, ${greetings.userName}!`);

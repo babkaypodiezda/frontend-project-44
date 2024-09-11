@@ -15,16 +15,16 @@ export default () => {
       if (isPrime(x) === true) {
         console.log('Correct!');
       } else {
-          return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greetings.userName}!`);
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greetings.userName}!`);
       }
     } else if (answer === 'no') {
-        if (isPrime(x) === false) {
-          console.log('Correct!');
-        } else {
-            return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${greetings.userName}!`);
-        }
+      if (isPrime(x) === false) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${greetings.userName}!`);
+      }
     } else {
-        return console.log(`Input only 'yes' or 'no'`);
+      return console.log('Input only "yes" or "no"');
     }
   }
   console.log(`Congratulations, ${greetings.userName}!`);

@@ -27,5 +27,5 @@ export default () => {
       return console.log('Input only "yes" or "no"');
     }
   }
-  console.log(`Congratulations, ${greetings.userName}!`);
+  return console.log(`Congratulations, ${greetings.userName}!`);
 };

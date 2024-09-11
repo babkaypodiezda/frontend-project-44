@@ -32,5 +32,5 @@ export default () => {
       return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
     }
   }
-  console.log(`Congratulations, ${greetings.userName}!`);
+  return console.log(`Congratulations, ${greetings.userName}!`);
 };

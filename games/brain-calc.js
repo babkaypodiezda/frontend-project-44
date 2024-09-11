@@ -34,23 +34,23 @@ export default () => {
       if (answer === w) {
         console.log('Correct!');
       } else {
-          return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
       }
     } else if (z === '-') {
-        w = x - y;
-        if (answer === w) {
-          console.log('Correct!');
-        } else {
-            return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
-        }
+      w = x - y;
+      if (answer === w) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
+      }
     } else if (z === '*') {
-        w = x * y;
-        if (answer === w) {
-          console.log('Correct!');
-        } else {
-            return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
-        }
+      w = x * y;
+      if (answer === w) {
+        console.log('Correct!');
+      } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
+      }
     }
   }
-  console.log(`Congratulations, ${greetings.userName}!`);
+  return console.log(`Congratulations, ${greetings.userName}!`);
 };

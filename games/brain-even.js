@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
-import { userName } from '../src/greetings.js';
+import * as greetings from '../src/greetings.js';
 
-export default () => {  
+export default () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
@@ -14,22 +14,24 @@ export default () => {
     if (answer === 'yes') {
       if (x % 2 === 0) {
         console.log('Correct!');
-        }
+      }
+      
       else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${userName}!`);
-        };
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. Let's try again, ${greetings.userName}!`);
+      }
     }
     else if (answer === 'no') {
       if (x % 2 !== 0) {
         console.log('Correct!');
       }
+
       else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${userName}!`);
-      };
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. Let's try again, ${greetings.userName}!`);
+      }
     }
     else {
       return console.log(`Input only 'yes' or 'no'`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${greetings.userName}!`);
 };

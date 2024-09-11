@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
-import { userName } from '../src/greetings.js';
+import * as greetings from '../src/greetings.js';
 
 export default () => {
   console.log('What is the result of the expression?');
@@ -24,7 +24,9 @@ export default () => {
     console.log(`Question: ${x} ${z} ${y}`);
 
     const answer = Number(readlineSync.question('Your answer: '));
-    if (Number.isNaN(answer)) {return console.log('Input only numbers'); }
+    if (Number.isNaN(answer)) {
+      return console.log('Input only numbers');
+    }
 
     let w = 0;
     if (z === '+') {
@@ -33,7 +35,7 @@ export default () => {
         console.log('Correct!');
       }
       else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${userName}!`);
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
       }
     }
     else if (z === '-') {
@@ -42,7 +44,7 @@ export default () => {
         console.log('Correct!');
       }
       else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${userName}!`);
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
       }
     }
     else if (z === '*') {
@@ -51,9 +53,9 @@ export default () => {
         console.log('Correct!');
       }
       else {
-        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${userName}!`);
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${w}'. Let's try again, ${greetings.userName}!`);
       }
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${greetings.userName}!`);
 };

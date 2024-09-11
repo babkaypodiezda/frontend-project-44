@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
-import { userName } from '../src/greetings.js';
+import * as greetings from '../src/greetings.js';
 
 export default () => {
   console.log('Find the greatest common divisor of given numbers.');
@@ -11,7 +11,7 @@ export default () => {
     console.log(`Question: ${x} ${y}`);
     let q = 0;
     for (let i = 0; i < 100; i += 1) {
-      if (x % i === 0 && y % i === 0 ) {
+      if (x % i === 0 && y % i === 0) {
         q = i;
       }
     }
@@ -23,9 +23,10 @@ export default () => {
     if (answer === q) {
       console.log('Correct!');
     }
+    
     else {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${userName}!`);
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${greetings.userName}!`);
 };

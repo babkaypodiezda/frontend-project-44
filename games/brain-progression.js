@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import _ from 'lodash';
-import { userName } from '../src/greetings.js';
+import * as greetings from '../src/greetings.js';
 
 export default () => {
   console.log('What number is missing in the progression?');
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let w = 0; w < 3; w += 1) {
     let x = _.random(10); // start
     const y = _.random(1, 10); // increment
     const arr = [];
     arr.push(x);
-    for (let i = 0; i < 9; i += 1){
+    for (let i = 0; i < 9; i += 1) {
       x += y;
       arr.push(x);
     }
@@ -29,9 +29,10 @@ export default () => {
     if (answer === q) {
       console.log("Correct!");
     }
+
     else {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${userName}!`);
+      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${greetings.userName}!`);
 };

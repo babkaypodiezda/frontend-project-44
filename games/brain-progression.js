@@ -27,11 +27,9 @@ export default () => {
     }
 
     if (answer === q) {
-      console.log("Correct!");
-    }
-
-    else {
-      return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
+      console.log('Correct!');
+    } else {
+        return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${q}'. Let's try again, ${greetings.userName}!`);
     }
   }
   console.log(`Congratulations, ${greetings.userName}!`);

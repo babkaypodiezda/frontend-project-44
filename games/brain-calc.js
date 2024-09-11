@@ -20,7 +20,7 @@ export default () => {
       case 3:
         z = '*';
         break;
-      default: 
+      default:
         z = 0;
     }
     console.log(`Question: ${x} ${z} ${y}`);
